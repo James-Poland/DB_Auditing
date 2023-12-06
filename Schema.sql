@@ -1,0 +1,9 @@
+IF NOT EXISTS ( SELECT *
+
+ FROM sys.schemas
+
+ WHERE name = N'DB' )
+
+ EXEC('CREATE SCHEMA [DB] AUTHORIZATION [dbo]');
+
+GO
